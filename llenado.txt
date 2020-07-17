@@ -1,0 +1,1 @@
+App\Arcana::create(['name'=> 'El Loco (Le Mat)', 'tarot_number' => 'I', 'type' => 'Mayor', 'description' => 'El loco representa la libertad y la energía positiva']);

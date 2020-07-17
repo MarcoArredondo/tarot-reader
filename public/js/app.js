@@ -65629,7 +65629,47 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [_c("b-alert", { attrs: { show: "" } }, [_vm._v("Default Alert")])],
+    [
+      _c(
+        "b-navbar",
+        {
+          staticStyle: { padding: "1rem" },
+          attrs: { variant: "dark", type: "dark" }
+        },
+        [
+          _c("b-navbar-brand", { attrs: { href: "/" } }, [
+            _c("img", {
+              staticClass: "d-inline-block align-top",
+              attrs: { src: "https://placekitten.com/g/30/30", alt: "Kitten" }
+            }),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticStyle: {
+                  "font-size": "large",
+                  "font-family": "'Parisienne'"
+                }
+              },
+              [_vm._v("Lector de Tarot")]
+            )
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-nav",
+        [
+          _c("b-nav-item", { attrs: { href: "#1" } }, [_vm._v("Link 1")]),
+          _vm._v(" "),
+          _c("b-nav-item", { attrs: { href: "#2" } }, [_vm._v("Link 2")]),
+          _vm._v(" "),
+          _c("b-nav-text", [_vm._v("Plain text")])
+        ],
+        1
+      )
+    ],
     1
   )
 }
