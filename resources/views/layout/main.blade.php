@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name') }}</title>
-        
+
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">-->
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <script>window.Laravel = {csrfToken: '{{ csrf_token() }}'}</script>
