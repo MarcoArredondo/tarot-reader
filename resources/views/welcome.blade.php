@@ -1,42 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name') }}</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
+@extends('layouts.app')
 
-<body>
-    <div class="shadow"></div>
+@section('content')
+    <div class="container" >       
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2">
 
-    <div class="container res-margin-top" >
-        <div class="row">
-
-            <div class="col-lg-6 col-sm-12" align="center" style="margin-bottom: 1rem;">
-                <button class="floatElement btn btn-primary">¿Qué es el Tarot?</button>
+            <div class="col mb-4 floatingElement">
+                <div class="card">
+                    <img src="{{ asset('/images/tarot.jpg') }}"  class="card-img-top" alt="mazo-tarot">        
+                    <div class="card-body">
+                        <h5 class="card-title">¿Qué es el tarot?</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col mb-4 floatingElement">
+                <div class="card">
+                <img src="{{ asset('/images/lectura.jpg') }}"  class="card-img-top" alt="lectura-tarot">
+                <div class="card-body">
+                    <h5 class="card-title">Hacer una tirada</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
             </div>
 
-            <div class="col-lg-6 col-sm-12" align="center" style="margin-bottom: 1rem;">
-                <button class="floatElement btn btn-primary">Hacer una tirada</button>
+            <div class="col mb-4 floatingElement">
+                <div class="card">
+                <img src="{{ asset('/images/major_arcanas.jpg') }}" class="card-img-top" alt="major_arcanas">
+                <div class="card-body">
+                    <h5 class="card-title">Arcanos Mayores</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
             </div>
 
-        </div>
-
-        <div class="row">            
-            <div class="col-lg-6" align="center" style="margin-bottom: 1rem;">
-                <button class="floatElement btn btn-primary">Los arcanos mayores</button>
+            <div class="col mb-4 floatingElement">
+                <div class="card">
+                <img src="{{ asset('/images/minor_arcanas.jpg') }}" class="card-img-top" alt="minor_arcanas">
+                <div class="card-body">
+                    <h5 class="card-title">Arcanos Menores</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
             </div>
 
-
-            <div class="col-lg-6" align="center" style="margin-bottom: 1rem;">
-                <button class="floatElement btn btn-primary">Los arcanos menores</button>
-            </div>
         </div>
     </div>
-
-  
-</body>
-
-</html>
+@endsection
