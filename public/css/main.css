@@ -49,7 +49,17 @@ body{
 }
 
 .floatingElement:hover {
-    animation: floatHorizontal 1s infinite;
+	animation: floatHorizontal 1s infinite;
+	text-decoration: underline;
+}
+
+.botones {
+	color:white; font-weight: bold;
+	background-color: #9649CB;
+}
+
+.botones:hover{
+	color: #D4C2FC;
 }
 
 
