@@ -9,7 +9,8 @@ body{
     width: 100%; 
     height: 100%; 
     background-color: #000000; 
-    top: 0px; left: 0px;
+	top: 0px; 
+	left: 0px;
 }
 
 @keyframes float {
@@ -50,7 +51,6 @@ body{
 
 .floatingElement:hover {
 	animation: floatHorizontal 1s infinite;
-	text-decoration: underline;
 }
 
 .botones {
